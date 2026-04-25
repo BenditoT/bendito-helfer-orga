@@ -74,7 +74,7 @@ jobs:
             --image "${IMAGE}:${{ github.sha }}" \
             --region "${{ env.REGION }}" \
             --platform managed \
-            --allow-unauthenticated \
+            --no-allow-unauthenticated \
             --cpu 1 \
             --memory 512Mi \
             --concurrency 80 \
